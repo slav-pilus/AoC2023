@@ -1,12 +1,8 @@
 import re
 
+from utils import read_file
+
 digits_as_string = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine']
-
-
-def read_file(file_path):
-    with open(file_path) as f:
-        list_of_lines = f.readlines()
-    return list_of_lines
 
 
 def get_calibration_value(line):
@@ -118,7 +114,6 @@ def main():
     #
     print(f'Part 1: {part_1}')
     print(f'Part 2: {part_2}')
-
 
 
 if __name__ == '__main__':
